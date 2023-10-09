@@ -45,10 +45,11 @@ const LoginScreen = ({ navigation }) => {
         <TextInput placeholder="Sua Senha" onChangeText={setPassword} secureTextEntry style={styles.inp} />
         
         <CheckBox value={rememberMe} onValueChange={setRememberMe} style={styles.xeque} />
-      </View>
 
+        <Text style={styles.lemb}>Lembrar-me</Text>
+      </View>
+ 
       <Button title="Entrar" onPress={handleLogin} />
-      <Text style={styles.lemb}>Lembrar-me</Text>
     </View>
   );
 };
@@ -58,7 +59,7 @@ export default LoginScreen;
 const styles = StyleSheet.create({
   tela:{
     flex: 1,
-    backgroundColor: '#000'
+    backgroundColor: '#FF0000'
   },
   
   inicio:{
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 25,
     borderTopRightRadius: 25,
     paddingStart: '5%',
-    paddingEnd: '8%'
+    paddingEnd: '5%'
   },
 
   inp:{
@@ -84,7 +85,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: '5%',
     marginBottom: 26,
-    color: '#fff'
+    color: '#000'
   },
 
   titulo:{
@@ -100,7 +101,7 @@ const styles = StyleSheet.create({
   },
 
   lemb:{
-    bottom: '50%',
-    fontSize: 14
+    fontSize: 14,
+    marginLeft: '1',
   }
 });
